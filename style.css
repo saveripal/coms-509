@@ -1,0 +1,49 @@
+/** body {
+ background-image: url("background1.png");
+ background-color: #cccccc;
+} **/
+
+#stopButton {
+  height: 50px;
+  background-color: #f44336; /* Red */
+  border-radius: 2px;
+  border: 1px white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#startButton {
+  height: 50px;
+  background-color: #4CAF50; /* Green */
+  border-radius: 2px;
+  border: 1px white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+
+.container {
+  height: 150px;
+  width: 370px;
+  background-color: black; /* Green */
+  border-radius: 5px;
+}
+#messages {
+    color: red;
+    display: none;
+    display: inline-block;
+    text-align: center;
+    clear: both;
+    padding-top: 30px;
+    margin-left: 1%;
+    width: 370px;
+}
