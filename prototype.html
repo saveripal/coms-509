@@ -6,9 +6,17 @@
 
 </head>
    <body>
-     <div>
-       <h1> CS-CMMU Dashboard </h1>
-     </div>
+     <table id="dashboard-heading" >
+       <tr>
+         <td align = "center">
+         <div>
+           <h1> CS-CMMU Dashboard </h1>
+         </div>
+       </td>
+       </tr>
+       <tr>
+         <td align="left">
+
 
      <div class="button">
         <button id="startButton" onclick="welcomeMessage()">START CS-CMMU</button>
@@ -23,6 +31,96 @@
       <button id="medalDrop" onclick="display()"> Place Medal</button>
       <button id="medalCollect" onclick="collectMedal()"> Collect Medal</button>
     </div>
+</td>
 
-   </body>
-</html>
+<td align="right">
+              <table id="conveyer-belt-a" border=5 bordercolor=red align="center">
+               <caption><b>CB-A</b></caption>
+               <tr>
+                  <td>
+                     <button id="cb-a-motor">Motor</button>
+                  </td>
+                  <td>
+                     <button id="cb-a-sensor">Sensor</button>
+                  </td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            <table id="feeder-platform" border=5 bordercolor=red align="center">
+               <caption><b>Feeder-Platform</b></caption>
+               <tr>
+                  <td>
+                     <button id="fp-rotor-motor">Rotator Motor</button>
+                  </td>
+                  <td>
+                     <button id="fp-vertical-motor">Vertical Motor</button>
+                  </td>
+                  <td>
+                     <button id="fp-sensor">Sensor</button>
+                  </td>
+               </tr>
+            </table>
+            <br>
+            <br>
+
+            <table id="transfer-robot" border=5 bordercolor=red align="center">
+               <caption><b>Transfer Robot</b></caption>
+               <tr>
+                  <td>
+                     <button id="tr-motor">TR Motor</button>
+                  </td>
+                  <td>
+                     <button id="tr-sensor">TR Sensor</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button id="tr-arm1-motor">TR Arm 1 Motor</button>
+                  </td>
+                  <td>
+                     <button id="tr-arm1-em">TR Arm 1 EM</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button id="tr-arm2-motor">TR Arm 2 Motor</button>
+                  </td>
+                  <td>
+                     <button id="tr-arm2-em">TR Arm 2 EM</button>
+                  </td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            <table id="press" border=5 bordercolor=red align="center">
+               <caption><b>Plate</b></caption>
+               <tr>
+                  <td>
+                     <button id="press-motor"> Motor</button>
+                  </td>
+                  <td>
+                     <button id="press-sensor"> Sensor</button>
+                  </td>
+               </tr>
+            </table>
+            <br>
+            <br>
+            <table id="conveyer-belt-b" border=5 bordercolor=red align="center">
+               <caption><b>CB-B</b></caption>
+               <tr>
+                  <td>
+                     <button id="cb-b-motor">Motor</button>
+                  </td>
+                  <td>
+                     <button id="cb-b-sensor">Sensor</button>
+                  </td>
+               </tr>
+            </table>
+            <br>
+            <br>
+          </td>
+        </tr>
+        </table>
+         </body>
+      </html>
