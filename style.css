@@ -3,34 +3,25 @@
  background-color: #cccccc;
 } **/
 
-#stopButton {
+#stopButton, #startButton {
   height: 50px;
-  background-color: #f44336; /* Red */
+  width: 180px;
   border-radius: 2px;
   border: 1px white;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
 }
-
 #startButton {
-  height: 50px;
   background-color: #4CAF50; /* Green */
-  border-radius: 2px;
-  border: 1px white;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  }
-
+}
+#stopButton {
+  background-color: #f44336; /* Red */
+}
 .container {
   height: 150px;
   width: 370px;
@@ -47,3 +38,17 @@
     margin-left: 1%;
     width: 370px;
 }
+#medalDrop, #medalCollect {
+  height: 50px;
+  width: 180px;
+  background-color: #708090; /* Green */
+  border-radius: 2px;
+  border: 1px white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }

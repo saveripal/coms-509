@@ -6,14 +6,22 @@
 
 </head>
    <body>
+     <div>
+       <h1> CS-CMMU Dashboard </h1>
+     </div>
 
      <div class="button">
-        <button id="startButton" onclick="display()">Start CS-CMMU</button>
-        <button id="stopButton" onclick="display()">Stop CS-CMMU</button>
+        <button id="startButton" onclick="welcomeMessage()">START CS-CMMU</button>
+        <button id="stopButton" onclick="stop()">STOP CS-CMMU</button>
     </div>
 
     <div class="container" >
-        <div id="messages">Waiting to start..</div>
+        <div id="messages">Waiting to start CS-CMMU...</div>
+    </div>
+
+    <div class="medal-drop-collect">
+      <button id="medalDrop" onclick="display()"> Place Medal</button>
+      <button id="medalCollect" onclick="collectMedal()"> Collect Medal</button>
     </div>
 
    </body>

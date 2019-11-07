@@ -1,53 +1,114 @@
 function display() {
 
   var dataset = [{
-    name: "CBA",
-    text: "Conveyor Belt-A started"
+    num: 1,
+    text: "Blank medal placed on belt-A"
   }, {
-    name: "mPlaced",
-    text: "Medal placed on belt-A"
+    num: 2,
+    text: "Belt-A in motion"
   }, {
-    name: "mDetected",
-    text: "Photoelectric sensor detected medal on CB-A"
+    num: 3,
+    text: "'Eye' detected medal on belt-A"
+  }, {
+    num: 4,
+    text: "Feeder platform rotation initiated.."
+  }, {
+    num: 5,
+    text: "Feeder platform downward motion initiated.."
+  }, {
+    num: 6,
+    text: "Medal transferred to Feeder platform"
+  }, {
+    num: 7,
+    text: "Feeder platform upward motion initiated.."
+  }, {
+    num: 8,
+    text: "TR rotation initiated.."
+  }, {
+    num: 9,
+    text: "TR Arm-1 extended"
+  }, {
+    num: 10,
+    text: "Blank medal picked-up by TR Arm-1"
+  }, {
+    num: 11,
+    text: "TR Arm-1 retracted"
+  }, {
+    num: 12,
+    text: "TR rotation initiated"
+  }, {
+    num: 13,
+    text: "TR Arm-1 extended to drop medal"
+  }, {
+    num: 14,
+    text: "Blank medal dropped on Press"
+  }, {
+    num: 15,
+    text: "TR Arm-1 retracted"
+  }, {
+    num: 16,
+    text: "Press upward motion initiated.."
+  }, {
+    num: 17,
+    text: "Medal is stamped!"
+  }, {
+    num: 18,
+    text: "Press downward motion initiated.."
+  }, {
+    num: 19,
+    text: "Transfer Robot rotation initiated.."
+  }, {
+    num: 20,
+    text: "TR Arm-2 extended to pick up medal"
+  },{
+    num: 21,
+    text: "Stamped medal picked up by TR Arm-2"
+  }, {
+    num: 22,
+    text: "TR Arm-2 retracted"
+  },{
+    num: 23,
+    text: "TR rotation initiated.."
+  }, {
+    num: 24,
+    text: "TR Arm-2 extended to drop"
+  }, {
+    num: 25,
+    text: "Stamped medal dropped on belt-B"
+  }, {
+    num: 26,
+    text: "'Eye' detected medal on belt-B"
+  }, {
+    num: 27,
+    text: "Medal ready to be colected. Press button to collect medal."
   }
-];
-/*var dataset = ["Hola", "Lily"];*/
 
+
+];
+document.getElementById('medalDrop').style.color = '#00FF00';
 dataset.forEach((val,i) => {
   setTimeout(() => {
     document.getElementById('messages').style.display = 'block';
     document.getElementById('messages').innerHTML = val.text;
+    if (val.num ===1) {
+      document.getElementById('medalDrop').style.color = 'FFFFFF';
+    }
+    if (val.num === 27) {
+      document.getElementById('medalCollect').style.color = '#00FF00';
+    }
   }, i*2000);
 });
+}
 
-
-/*
-var m1="Medal present";
-  var m2="Medal absent";
-  var fp="Feeder Platform turned on. Motion initiated";
-  var sFP="Status of Feeder Platform:"; //high/low
-  //var movementFP="Feeder platform movement initiated";
-  var l1FP="Feeder platform is at the same level as Conveyer Belt-A";
-  var rFP="Rotation for Feeder Platform initiated";
-  var rrFP="Rotation degree of Feeder Platform:";
-  var rotationDeg=[10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,100,120,130,140,150,160,170,180];
-  var l2FP="Feeder Platform faces the Conveyor Belt-A";
-  var mFP="Blank medal transferred to Feeder Platform";
-  var tTR="Transfer robot triggered to rotate";
-  var pTR="Rotated angle for Transfer Robot:";
-  var posTR="Transfer Robot facing Feeder Platform now";
-  var p1TRA1="Transfer robot arm 1 extends";
-  var p2TRA1="Transfer robot arm 1 retracts";
-  var posTR="Transfer robot rotating. rotation degree:";
-  var pTR="Transfer Robot facing press.";
-  var pPlate="Plate position:";
-  var motionPlate="Plate moves:";
-  var pos=["low","high"];
-  var mStamp="Medal is stamped";
-  var p1TRA2="Transfer robot arm 1 extends";
-  var p2TRA2="Transfer robot arm 1 retracts";
- */
-
-
-
+function welcomeMessage() {
+  document.getElementById('messages').style.display = 'block';
+  document.getElementById('messages').innerHTML = "CS-CMMU Started. Press button to place medal on CB";
+  document.getElementById('medalDrop').style.color = '#00FF00';
+}
+function collectMedal(){
+  document.getElementById('messages').style.display = 'block';
+  document.getElementById('messages').innerHTML = "Stamped medal collected. Press STOP to stop.";
+}
+function stop() {
+  document.getElementById('messages').style.display = 'none';
 }
